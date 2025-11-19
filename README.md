@@ -191,10 +191,22 @@ Comando: ./vendor/bin/phpunit tests/feature/ProductControllerTest.php
 ![Home](images/Home.jpg)<br>
                                                                           
      Figura 3.2: Lista de produtos. 
-![Product List](images/ProductList.jpg)<br> 
+![Product List](images/Lista.jpg)<br> 
                                                                            
       Figura 3.3: Descrição do produto. 
-![Product Description](images/ProductDescription.jpg)<br> 
+![Product Description](images/Detalhes.jpg)<br> 
+
+      Figura 3.4: Criar. 
+![Product Description](images/Criar.jpg)<br> 
+
+      Figura 3.5: Editar. 
+![Product Description](images/Editar.jpg)<br> 
+
+      Figura 3.5: Login. 
+![Product Description](images/Login.jpg)<br> 
+
+      Figura 3.5: Registrar. 
+![Product Description](images/Registrar.jpg)<br> 
                                                                           
  
 
