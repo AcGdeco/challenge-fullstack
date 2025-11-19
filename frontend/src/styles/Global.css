@@ -2,7 +2,6 @@ html {
     height: auto;
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -92,6 +91,28 @@ table tr:nth-child(odd) {
     flex-direction: column;
 }
 
+/* Action buttons in product list: same size and spacing */
+.wrapper-product-list .action-btn {
+    display: inline-block;
+    min-width: 90px;
+    padding: 6px 10px;
+    margin-right: 8px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6d6d9c;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.wrapper-product-list .action-btn.details { background-color: #6d6d9c; }
+.wrapper-product-list .action-btn.edit { background-color: #4caf50; }
+.wrapper-product-list .action-btn.delete { background-color: #c94b4b; }
+
+.wrapper-product-list .action-btn:focus { outline: none; }
+
 .return-btn a{
     text-decoration: none;
     padding: 5px 10px;
@@ -107,4 +128,112 @@ table tr:nth-child(odd) {
 .return-btn {
     text-align: left;
     padding-bottom: 6px;
+}
+
+.wrapper-menu {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-menu .left-group,
+.wrapper-menu .right-group {
+    display: flex;
+    align-items: center;
+}
+
+/* push right-group to the far right */
+.wrapper-menu .right-group {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.btn-menu a {
+    text-decoration: none;
+    background-color: lightgray;
+    padding: 5px 10px;
+    color: black;
+    border: solid 1px white;
+}
+
+/* Centralização e estilo para formulário de registro */
+.wrapper-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.wrapper-register > div {
+    width: 100%;
+    max-width: 600px;
+}
+
+.wrapper-register h2 {
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.wrapper-register input[type="text"],
+.wrapper-register input[type="email"],
+.wrapper-register input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wrapper-register label {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.wrapper-register button {
+    padding: 8px 14px;
+    background-color: #6d6d9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wrapper-register button:hover {
+    background-color: #606089;
+}
+
+/* Primary button style reused across forms */
+.btn-primary {
+    padding: 8px 14px;
+    background-color: #6d6d9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary:hover { background-color: #606089; }
+
+/* For Product Edit: alternate table row colors starting with the first row colored */
+.wrapper-product-details .product-details tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.wrapper-product-details .product-details tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Ensure the table row that contains the action/save button has no background color */
+.wrapper-product-details .product-details tbody tr:last-child {
+    background-color: transparent;
 }

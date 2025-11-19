@@ -25,7 +25,7 @@ class ProductController extends Controller
         try {
             $request->validate([
                 'name' => 'required|string|max:255',
-                'description' => 'required|string',
+                'description' => 'nullable|string',
                 'price' => 'required|numeric',
                 'quantity' => 'required|integer',
             ]);
@@ -44,7 +44,7 @@ class ProductController extends Controller
         try {
             $request->validate([
                 'name' => 'string|max:255',
-                'description' => 'string',
+                'description' => 'nullable|string',
                 'price' => 'numeric',
                 'quantity' => 'integer',
             ]);
