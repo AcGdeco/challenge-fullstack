@@ -202,10 +202,10 @@ Comando: ./vendor/bin/phpunit tests/feature/ProductControllerTest.php
       Figura 3.5: Editar. 
 ![Product Description](images/Editar.jpg)<br> 
 
-      Figura 3.5: Login. 
+      Figura 3.6: Login. 
 ![Product Description](images/Login.jpg)<br> 
 
-      Figura 3.5: Registrar. 
+      Figura 3.7: Registrar. 
 ![Product Description](images/Registrar.jpg)<br> 
                                                                           
  
